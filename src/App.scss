@@ -1,0 +1,75 @@
+@media screen and (max-width: 800px) {
+  #quote-box {
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .button {
+    flex-direction: column-reverse;
+
+    #new-quote {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.App {
+  text-align: center;
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  #quote-box {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 25px;
+
+    #text {
+      margin-bottom: 0;
+      font-weight: 800;
+
+      #quote-icon {
+        margin-right: 10px;
+      }
+    }
+
+    #author {
+      margin-top: 0;
+      text-align: end;
+    }
+
+    .button {
+      display: flex;
+      justify-content: space-between;
+
+      #tweet-quote {
+        display: flex;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        align-self: center;
+        justify-content: center;
+      }
+
+      #new-quote {
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+  }
+}
